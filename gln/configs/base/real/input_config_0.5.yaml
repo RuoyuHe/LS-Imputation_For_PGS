@@ -1,0 +1,57 @@
+  input_info:
+    input_name: covs
+    input_source: /home/panwei/he000176/jinwen/data/pheno/training_data_for_base_models/pheno_cov_0.5B.csv
+    input_type: tabular
+  input_type_info:
+    input_cat_columns:
+    - sex
+    input_con_columns:
+    - pc1
+    - pc2
+    - pc3
+    - pc4
+    - pc5
+    - pc6
+    - pc7
+    - pc8
+    - pc9
+    - pc10
+    - age
+    label_parsing_chunk_size: 20000
+    mixing_subtype: mixup
+  interpretation_config: null
+  model_config:
+    model_init_config:
+      fc_layer: true
+      l1: 0.0
+    model_type: tabular
+  pretrained_config: null
+
+  input_info:
+    input_name: genotype
+    input_source: /home/panwei/he000176/jinwen/data/arrays/base
+    input_type: omics
+
+  input_type_info:
+    mixing_subtype: cutmix-block
+    na_augment_perc: 0.2
+    na_augment_prob: 1.0
+    omics_format: one-hot
+    snp_file: /home/panwei/he000176/jinwen/GWAS_code/bim_for_gln_001.bim
+
+  interpretation_config: null
+
+  model_config:
+    model_init_config:
+      channel_exp_base: 2
+      cutoff: 4096
+      first_channel_expansion: 1
+      first_kernel_expansion: -4
+      kernel_width: 16
+      l1: 1.0e-06
+      layers: null
+      rb_do: 0.25
+      stochastic_depth_p: 0.0
+    model_type: genome-local-net
+
+  pretrained_config: null

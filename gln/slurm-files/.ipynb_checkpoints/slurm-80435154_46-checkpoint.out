@@ -1,0 +1,2 @@
+ls: cannot access /home/panwei/he000176/jinwen/gln/model_output//0.1: No such file or directory
+eirpredict --global_configs "/home/panwei/he000176/jinwen/gln/configs/base//global_config_0.1.yaml" --input_configs "/home/panwei/he000176/jinwen/gln/configs/test/input_config.yaml" --output_configs "/home/panwei/he000176/jinwen/gln/configs/test/output_config.yaml" --model_path "/home/panwei/he000176/jinwen/gln/model_output//0.1/" --evaluate --output_folder "/home/panwei/he000176/jinwen/results/gln//0.1"

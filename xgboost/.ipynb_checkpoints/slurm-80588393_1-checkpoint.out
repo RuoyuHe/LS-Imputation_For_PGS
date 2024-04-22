@@ -1,0 +1,25 @@
+Running task with datatype: LSimp, p: 1
+[0]	eval-rmse:55.99130
+[1]	eval-rmse:55.90442
+[2]	eval-rmse:56.10287
+[3]	eval-rmse:56.18901
+[4]	eval-rmse:56.30743
+[5]	eval-rmse:56.57890
+[6]	eval-rmse:56.61627
+[7]	eval-rmse:56.65784
+[8]	eval-rmse:56.72716
+[9]	eval-rmse:56.48074
+[10]	eval-rmse:56.34345
+[11]	eval-rmse:56.56277
+[12]	eval-rmse:56.49873
+[13]	eval-rmse:56.65912
+[14]	eval-rmse:56.77417
+[15]	eval-rmse:56.83414
+[16]	eval-rmse:56.87449
+[17]	eval-rmse:56.82196
+[18]	eval-rmse:56.84403
+[19]	eval-rmse:57.15895
+[20]	eval-rmse:57.30047
+[21]	eval-rmse:57.26364
+/home/panwei/he000176/.conda/envs/tcn/lib/python3.7/site-packages/rpy2/robjects/pandas2ri.py:14: FutureWarning: pandas.core.index is deprecated and will be removed in a future version.  The public classes are available in the top-level namespace.
+  from pandas.core.index import Index as PandasIndex

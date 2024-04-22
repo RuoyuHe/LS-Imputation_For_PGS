@@ -1,0 +1,2 @@
+Running task with datatype: prs, p: 9
+python3 xgb.py 9 prs

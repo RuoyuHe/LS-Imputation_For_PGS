@@ -1,0 +1,2 @@
+Running task with datatype: real, p: 1
+python3 xgb.py 1 real

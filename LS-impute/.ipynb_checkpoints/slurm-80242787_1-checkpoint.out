@@ -1,0 +1,164 @@
+gwas results and gwas bim have the same snps?  TRUE 
+[1] 1
+/home/panwei/he000176/.conda/envs/tcn/lib/python3.7/site-packages/rpy2/robjects/pandas2ri.py:14: FutureWarning: pandas.core.index is deprecated and will be removed in a future version.  The public classes are available in the top-level namespace.
+  from pandas.core.index import Index as PandasIndex
+R[write to console]: Extracting number of samples and rownames from chr1.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr1.bim...
+
+Sample IDs in chr 1 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+[1] 2
+R[write to console]: Extracting number of samples and rownames from chr2.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr2.bim...
+
+Sample IDs in chr 2 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+[1] 3
+R[write to console]: Extracting number of samples and rownames from chr3.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr3.bim...
+
+Sample IDs in chr 3 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+[1] 4
+R[write to console]: Extracting number of samples and rownames from chr4.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr4.bim...
+
+Sample IDs in chr 4 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+[1] 5
+R[write to console]: Extracting number of samples and rownames from chr5.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr5.bim...
+
+Sample IDs in chr 5 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+[1] 6
+R[write to console]: Extracting number of samples and rownames from chr6.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr6.bim...
+
+Sample IDs in chr 6 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+[1] 7
+R[write to console]: Extracting number of samples and rownames from chr7.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr7.bim...
+
+Sample IDs in chr 7 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+[1] 8
+R[write to console]: Extracting number of samples and rownames from chr8.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr8.bim...
+
+Sample IDs in chr 8 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+[1] 9
+R[write to console]: Extracting number of samples and rownames from chr9.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr9.bim...
+
+Sample IDs in chr 9 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+[1] 10
+R[write to console]: Extracting number of samples and rownames from chr10.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr10.bim...
+
+Sample IDs in chr 10 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+[1] 11
+R[write to console]: Extracting number of samples and rownames from chr11.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr11.bim...
+
+Sample IDs in chr 11 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+[1] 12
+R[write to console]: Extracting number of samples and rownames from chr12.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr12.bim...
+
+Sample IDs in chr 12 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+[1] 13
+R[write to console]: Extracting number of samples and rownames from chr13.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr13.bim...
+
+Sample IDs in chr 13 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+[1] 14
+R[write to console]: Extracting number of samples and rownames from chr14.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr14.bim...
+
+Sample IDs in chr 14 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+[1] 15
+R[write to console]: Extracting number of samples and rownames from chr15.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr15.bim...
+
+Sample IDs in chr 15 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+[1] 16
+R[write to console]: Extracting number of samples and rownames from chr16.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr16.bim...
+
+Sample IDs in chr 16 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+[1] 17
+R[write to console]: Extracting number of samples and rownames from chr17.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr17.bim...
+
+Sample IDs in chr 17 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+[1] 18
+R[write to console]: Extracting number of samples and rownames from chr18.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr18.bim...
+
+Sample IDs in chr 18 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+[1] 19
+R[write to console]: Extracting number of samples and rownames from chr19.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr19.bim...
+
+Sample IDs in chr 19 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+[1] 20
+R[write to console]: Extracting number of samples and rownames from chr20.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr20.bim...
+
+Sample IDs in chr 20 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+[1] 21
+R[write to console]: Extracting number of samples and rownames from chr21.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr21.bim...
+
+Sample IDs in chr 21 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+[1] 22
+R[write to console]: Extracting number of samples and rownames from chr22.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr22.bim...
+
+Sample IDs in chr 22 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+bim dim: 60715 6 
+fam dim: 29996 6 
+snp dim: 29996 60715 
+All SNPs aligned?  TRUE 
+total_snp dim: 29996 60715 
+start: 1 end: 25000 
+snp batch dim: 25000 60715 

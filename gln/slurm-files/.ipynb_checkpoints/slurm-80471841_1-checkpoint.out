@@ -1,0 +1,33 @@
+eirpredict --global_configs "/home/panwei/he000176/jinwen/gln/configs/base/LSimp/global_config_0.1.yaml" --input_configs "/home/panwei/he000176/jinwen/gln/configs/ensemble/input_config.yaml" --output_configs "/home/panwei/he000176/jinwen/gln/configs/ensemble/output_config.yaml" --model_path "/home/panwei/he000176/jinwen/gln/model_output/LSimp/0.1/saved_models//0.1_model_300_perf-average=0.0362.pt" --evaluate --output_folder "/home/panwei/he000176/jinwen/results/gln/LSimp/0.1"
+12:05:32 - INFO - eir.train_utils.utils - Global random seed set to 0.
+Target Labels:   0%|                                                                                                                                                       | 0/30000 [00:00<?, ?it/s]Target Labels: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 30000/30000 [00:00<00:00, 746738.20it/s]
+genotype: 0it [00:00, ?it/s]genotype: 21576it [00:00, 215741.69it/s]genotype: 29998it [00:00, 74116.92it/s] 
+Progress: 0it [00:00, ?it/s]Progress: 4474it [00:00, 44736.52it/s]Progress: 29736it [00:00, 167013.82it/s]Progress: 29996it [00:00, 106183.03it/s]
+Target Labels:   0%|                                                                                                                                                        | 0/2999 [00:00<?, ?it/s]Target Labels: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2999/2999 [00:00<00:00, 810588.84it/s]
+genotype: 0it [00:00, ?it/s]genotype: 1787it [00:00, 4784.65it/s]genotype: 2999it [00:00, 6839.20it/s]
+findfont: Font family 'Arial' not found.
+findfont: Font family 'Arial' not found.
+findfont: Font family 'Arial' not found.
+findfont: Font family 'Arial' not found.
+findfont: Font family 'Arial' not found.
+findfont: Font family 'Arial' not found.
+findfont: Font family 'Arial' not found.
+findfont: Font family 'Arial' not found.
+findfont: Font family 'Arial' not found.
+findfont: Font family 'Arial' not found.
+findfont: Font family 'Arial' not found.
+findfont: Font family 'Arial' not found.
+findfont: Font family 'Arial' not found.
+findfont: Font family 'Arial' not found.
+findfont: Font family 'Arial' not found.
+findfont: Font family 'Arial' not found.
+findfont: Font family 'Arial' not found.
+findfont: Font family 'Arial' not found.
+findfont: Font family 'Arial' not found.
+findfont: Font family 'Arial' not found.
+findfont: Font family 'Arial' not found.
+findfont: Font family 'Arial' not found.
+findfont: Font family 'Arial' not found.
+findfont: Font family 'Arial' not found.
+findfont: Font family 'Arial' not found.
+findfont: Font family 'Arial' not found.

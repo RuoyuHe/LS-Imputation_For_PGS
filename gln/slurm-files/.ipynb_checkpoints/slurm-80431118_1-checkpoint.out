@@ -1,0 +1,2 @@
+Running task with datatype: LSimp, p: 1
+eirtrain --global_configs "/home/panwei/he000176/jinwen/gln/configs/base/LSimp/global_config_0.1.yaml" --input_configs "/home/panwei/he000176/jinwen/gln/configs/base/LSimp/input_config_0.1.yaml" --output_configs "/home/panwei/he000176/jinwen/gln/configs/base/LSimp/output_config_0.1.yaml"

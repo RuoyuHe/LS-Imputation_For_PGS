@@ -1,0 +1,25 @@
+#!/bin/bash -l
+#SBATCH -p ag2tb
+#SBATCH --nodes=1
+#SBATCH --time=24:00:00
+#SBATCH --ntasks-per-node=1
+#SBATCH --mem=256g
+#SBATCH --mail-type=FAIL
+#SBATCH --mail-user=he000176@umn.edu
+#SBATCH --array=1-27
+#SBATCH --job-name=prs_train
+
+cd /home/panwei/he000176/jinwen/PRS
+conda activate tcn
+module load R/3.6.3
+
+# Define datatype based on the SLURM_ARRAY_TASK_ID
+declare -a datatype=('LSimp' 'prs' 'real')
+
+# Calculate idx
+let "idx=(${SLURM_ARRAY_TASK_ID}-1)/9"
+let "p=(${SLURM_ARRAY_TASK_ID}-1)%9+1"  # Iterate from 1 to 9
+
+echo "Running task with datatype: ${datatype[$idx]}, p: $p"
+
+Rscript prs.R ${p} ${datatype[$idx]}

@@ -1,0 +1,26 @@
+#!/bin/bash -l
+#SBATCH -p ag2tb
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=2
+#SBATCH --time=24:00:00
+#SBATCH --ntasks-per-node=1
+#SBATCH --mem=256g
+#SBATCH --mail-type=FAIL
+#SBATCH --mail-user=he000176@umn.edu
+#SBATCH --array=1-27
+
+cd /home/panwei/he000176/jinwen/gln
+conda activate eir-gln
+
+BASE_PATH="/home/panwei/he000176/jinwen/gln/configs/base/"
+
+# Define datatype based on the SLURM_ARRAY_TASK_ID
+declare -a datatype=('LSimp' 'prs' 'real')
+
+# Calculate idx
+let "idx=(${SLURM_ARRAY_TASK_ID}-1)/9"
+let "p=(${SLURM_ARRAY_TASK_ID}-1)%9+1"  # Iterate from 1 to 9
+
+echo "Running task with datatype: ${datatype[$idx]}, p: $p"
+
+eirtrain --global_configs "${BASE_PATH}${datatype[$idx]}/global_config_0.$p.yaml" --input_configs "${BASE_PATH}${datatype[$idx]}/input_config_0.$p.yaml" --output_configs "${BASE_PATH}${datatype[$idx]}/output_config_0.$p.yaml"

@@ -1,0 +1,187 @@
+2024-03-04 21:39:50.825254: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /common/software/install/migrated/R/3.6.0/lib64/R/lib:/common/software/install/migrated/R/3.6.0/lib64:/common/software/install/migrated/libtiff/4.0.8/lib:/common/software/install/migrated/isl/0.19_gcc8.1.0/lib:/common/software/install/migrated/mpc/1.1.0_gcc8.1.0/lib:/common/software/install/migrated/mpfr/4.0.1_gcc8.1.0/lib:/common/software/install/migrated/gmp/6.1.2_gcc8.1.0/lib:/common/software/install/migrated/curl/7.59.0_gcc7.2.0/lib:/common/software/install/migrated/xz-utils/5.2.3_gcc7.2.0/lib:/common/software/install/migrated/pcre/8.42_gcc7.2.0/lib:/common/software/install/migrated/isl/0.18_gcc7.2.0/lib:/common/software/install/migrated/mpc/1.0.3_gcc7.2.0/lib:/common/software/install/migrated/mpfr/3.1.6_gcc7.2.0/lib:/common/software/install/migrated/gmp/6.1.2_gcc7.2.0/lib:/common/software/install/migrated/bzip2/1.0.6-gcc7.2.0/lib:/common/software/install/migrated/zlib/1.2.11_gcc7.2.0/lib:/common/software/install/migrated/gcc/7.2.0/lib64:/common/software/install/migrated/gcc/8.1.0/lib64
+2024-03-04 21:39:50.825311: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+ensemble
+[1] 1
+/home/panwei/he000176/.conda/envs/tcn/lib/python3.7/site-packages/rpy2/robjects/pandas2ri.py:14: FutureWarning: pandas.core.index is deprecated and will be removed in a future version.  The public classes are available in the top-level namespace.
+  from pandas.core.index import Index as PandasIndex
+R[write to console]: Extracting number of samples and rownames from chr1.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr1.bim...
+
+any NAs in idx when aligning sample ids?  0 
+Sample IDs in chr 1 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+[1] 2
+R[write to console]: Extracting number of samples and rownames from chr2.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr2.bim...
+
+any NAs in idx when aligning sample ids?  0 
+Sample IDs in chr 2 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+[1] 3
+R[write to console]: Extracting number of samples and rownames from chr3.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr3.bim...
+
+any NAs in idx when aligning sample ids?  0 
+Sample IDs in chr 3 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+[1] 4
+R[write to console]: Extracting number of samples and rownames from chr4.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr4.bim...
+
+any NAs in idx when aligning sample ids?  0 
+Sample IDs in chr 4 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+[1] 5
+R[write to console]: Extracting number of samples and rownames from chr5.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr5.bim...
+
+any NAs in idx when aligning sample ids?  0 
+Sample IDs in chr 5 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+[1] 6
+R[write to console]: Extracting number of samples and rownames from chr6.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr6.bim...
+
+any NAs in idx when aligning sample ids?  0 
+Sample IDs in chr 6 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+[1] 7
+R[write to console]: Extracting number of samples and rownames from chr7.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr7.bim...
+
+any NAs in idx when aligning sample ids?  0 
+Sample IDs in chr 7 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+[1] 8
+R[write to console]: Extracting number of samples and rownames from chr8.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr8.bim...
+
+any NAs in idx when aligning sample ids?  0 
+Sample IDs in chr 8 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+[1] 9
+R[write to console]: Extracting number of samples and rownames from chr9.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr9.bim...
+
+any NAs in idx when aligning sample ids?  0 
+Sample IDs in chr 9 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+[1] 10
+R[write to console]: Extracting number of samples and rownames from chr10.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr10.bim...
+
+any NAs in idx when aligning sample ids?  0 
+Sample IDs in chr 10 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+[1] 11
+R[write to console]: Extracting number of samples and rownames from chr11.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr11.bim...
+
+any NAs in idx when aligning sample ids?  0 
+Sample IDs in chr 11 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+[1] 12
+R[write to console]: Extracting number of samples and rownames from chr12.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr12.bim...
+
+any NAs in idx when aligning sample ids?  0 
+Sample IDs in chr 12 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+[1] 13
+R[write to console]: Extracting number of samples and rownames from chr13.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr13.bim...
+
+any NAs in idx when aligning sample ids?  0 
+Sample IDs in chr 13 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+[1] 14
+R[write to console]: Extracting number of samples and rownames from chr14.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr14.bim...
+
+any NAs in idx when aligning sample ids?  0 
+Sample IDs in chr 14 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+[1] 15
+R[write to console]: Extracting number of samples and rownames from chr15.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr15.bim...
+
+any NAs in idx when aligning sample ids?  0 
+Sample IDs in chr 15 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+[1] 16
+R[write to console]: Extracting number of samples and rownames from chr16.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr16.bim...
+
+any NAs in idx when aligning sample ids?  0 
+Sample IDs in chr 16 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+[1] 17
+R[write to console]: Extracting number of samples and rownames from chr17.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr17.bim...
+
+any NAs in idx when aligning sample ids?  0 
+Sample IDs in chr 17 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+[1] 18
+R[write to console]: Extracting number of samples and rownames from chr18.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr18.bim...
+
+any NAs in idx when aligning sample ids?  0 
+Sample IDs in chr 18 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+[1] 19
+R[write to console]: Extracting number of samples and rownames from chr19.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr19.bim...
+
+any NAs in idx when aligning sample ids?  0 
+Sample IDs in chr 19 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+[1] 20
+R[write to console]: Extracting number of samples and rownames from chr20.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr20.bim...
+
+any NAs in idx when aligning sample ids?  0 
+Sample IDs in chr 20 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+[1] 21
+R[write to console]: Extracting number of samples and rownames from chr21.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr21.bim...
+
+any NAs in idx when aligning sample ids?  0 
+Sample IDs in chr 21 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+[1] 22
+R[write to console]: Extracting number of samples and rownames from chr22.fam...
+
+R[write to console]: Extracting number of variants and colnames from chr22.bim...
+
+any NAs in idx when aligning sample ids?  0 
+Sample IDs in chr 22 the same as before?  TRUE 
+All sig SNPs selected?  TRUE 
+bim dim: 8258 6 
+fam dim: 10000 6 
+snp dim: 10000 8258 
+All SNPs aligned?  TRUE 
+total_snp dim: 10000 8258 
+snp dim: (10000, 8258)

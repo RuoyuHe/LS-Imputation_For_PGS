@@ -1,0 +1,25 @@
+#!/bin/bash -l
+#SBATCH -p ag2tb
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=2
+#SBATCH --time=12:00:00
+#SBATCH --ntasks-per-node=1
+#SBATCH --mem=256g
+#SBATCH --mail-type=FAIL
+#SBATCH --mail-user=he000176@umn.edu
+#SBATCH --array=1-3
+#SBATCH --job-name=prs_makeSNP
+
+cd /home/panwei/he000176/jinwen/PRS
+module load R/3.6.3
+
+
+# Define datatype based on the SLURM_ARRAY_TASK_ID
+declare -a datatype=('base' 'ensemble' 'test')
+
+# Calculate idx
+let "idx=(${SLURM_ARRAY_TASK_ID}-1)"
+
+echo "Running task with datatype: ${datatype[$idx]}"
+
+Rscript get_snp_matrix.R ${datatype[$idx]}

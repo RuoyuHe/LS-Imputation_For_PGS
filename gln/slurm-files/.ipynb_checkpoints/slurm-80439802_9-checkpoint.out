@@ -1,0 +1,10 @@
+Running task with datatype: LSimp, p: 9
+23:25:28 - INFO - eir.train_utils.utils - Global random seed set to 0.
+Target Labels:   0%|                                                                                                                                                           | 0/26697 [00:00<?, ?it/s]Target Labels:  24%|█████████████████████████████████▏                                                                                                           | 6274/26697 [00:00<00:00, 21769.97it/s]Target Labels: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 26697/26697 [00:00<00:00, 84357.97it/s]
+genotype: 0it [00:00, ?it/s]genotype: 17168it [00:00, 171663.79it/s]genotype: 26697it [00:00, 159735.66it/s]
+Target Labels:   0%|                                                                                                                                                             | 0/300 [00:00<?, ?it/s]Target Labels: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 300/300 [00:00<00:00, 425817.66it/s]
+genotype: 0it [00:00, ?it/s]genotype: 136it [00:00, 431.56it/s]genotype: 300it [00:00, 757.82it/s]
+/home/panwei/he000176/.conda/envs/eir-gln/lib/python3.11/site-packages/eir/visualization/interpretation_visualization.py:129: UserWarning: Tight layout not applied. The bottom and top margins cannot be made large enough to accommodate all axes decorations.
+  gs.tight_layout(fig)
+/home/panwei/he000176/.conda/envs/eir-gln/lib/python3.11/site-packages/eir/visualization/interpretation_visualization.py:129: UserWarning: Tight layout not applied. The bottom and top margins cannot be made large enough to accommodate all axes decorations.
+  gs.tight_layout(fig)

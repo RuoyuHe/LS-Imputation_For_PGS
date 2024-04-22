@@ -1,0 +1,19 @@
+22:46:55 - INFO - eir.train_utils.utils - Global random seed set to 0.
+Traceback (most recent call last):
+  File "/home/panwei/he000176/.conda/envs/eir-gln/bin/eirtrain", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/panwei/he000176/.conda/envs/eir-gln/lib/python3.11/site-packages/eir/train.py", line 65, in main
+    configs = get_configs()
+              ^^^^^^^^^^^^^
+  File "/home/panwei/he000176/.conda/envs/eir-gln/lib/python3.11/site-packages/eir/setup/config.py", line 120, in get_configs
+    configs = generate_aggregated_config(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/panwei/he000176/.conda/envs/eir-gln/lib/python3.11/site-packages/eir/setup/config.py", line 248, in generate_aggregated_config
+    global_config = get_global_config(global_configs=global_config_iter)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/panwei/he000176/.conda/envs/eir-gln/lib/python3.11/site-packages/eir/setup/config.py", line 289, in get_global_config
+    validate_keys_against_dataclass(
+  File "/home/panwei/he000176/.conda/envs/eir-gln/lib/python3.11/site-packages/eir/setup/config.py", line 369, in validate_keys_against_dataclass
+    raise KeyError(message)
+KeyError: "Unexpected keys found in configuration: 'attribution_target_classes'. Expected keys of type 'GlobalConfig': 'no_pbar, early_stopping_buffer, weighted_sampling_columns, save_evaluation_sample_results, checkpoint_interval, n_saved_models, early_stopping_patience, optimizer, mixing_alpha, attribution_background_samples, gradient_clipping, cat_averaging_metrics, strict_pretrained_loading, sample_interval, device, compute_attributions, lr_schedule, lr_lb, gradient_noise, compile_model, max_attributions_per_class, batch_size, gradient_accumulation_steps, log_level, amp, dataloader_workers, find_lr, attributions_every_sample_factor, b2, latent_sampling, lr, wd, n_epochs, n_iter_before_swa, con_averaging_metrics, plot_lr_schedule, lr_plateau_factor, warmup_steps, valid_size, b1, memory_dataset, pretrained_checkpoint, lr_plateau_patience, plot_skip_steps, output_folder, manual_valid_ids_file'."

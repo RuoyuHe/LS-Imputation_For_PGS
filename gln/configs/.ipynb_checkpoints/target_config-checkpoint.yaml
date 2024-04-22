@@ -1,0 +1,5 @@
+label_file: /home/panwei/fu000217/dl/LipA/7_apply/realdata/smaller_size/0.9/pheno_pred.csv
+label_parsing_chunk_size: 2000
+target_cat_columns: []
+target_con_columns:
+  - pheno

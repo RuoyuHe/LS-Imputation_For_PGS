@@ -1,0 +1,40 @@
+#!/bin/bash -l
+#SBATCH -p ag2tb
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=2
+#SBATCH --time=12:00:00
+#SBATCH --ntasks-per-node=1
+#SBATCH --mem=256g
+#SBATCH --mail-type=FAIL
+#SBATCH --mail-user=he000176@umn.edu
+#SBATCH --array=1-54
+
+cd /home/panwei/he000176/jinwen/gln
+conda activate eir-gln
+
+BASE_PATH="/home/panwei/he000176/jinwen/gln/configs/base/"
+
+# Define datatype based on the SLURM_ARRAY_TASK_ID
+declare -a datatype=('LSimp' 'prs' 'real')
+declare -a predset=('ensemble' 'test')
+
+# Calculate idx
+if [ ${SLURM_ARRAY_TASK_ID} -le 27 ]; then
+  let "idx=(${SLURM_ARRAY_TASK_ID}-1)/9"
+  set_idx=0
+else
+  let "temp_id=${SLURM_ARRAY_TASK_ID}-27"
+  let "idx=(${temp_id}-1)/9"
+  set_idx=1
+fi
+
+let "p=(${SLURM_ARRAY_TASK_ID}-1)%9+1"  # Iterate from 1 to 9
+
+io_config_path="/home/panwei/he000176/jinwen/gln/configs/${predset[$set_idx]}"
+model_path="/home/panwei/he000176/jinwen/gln/model_output/${datatype[$idx]}/0.$p/saved_models"
+model_file=$(ls -Art ${model_path} | tail -n 1)
+
+echo "eirpredict --global_configs \"${BASE_PATH}${datatype[$idx]}/global_config_0.$p.yaml\" --input_configs \"${io_config_path}/input_config.yaml\" --output_configs \"${io_config_path}/output_config.yaml\" --model_path \"${model_path}/${model_file}\" --evaluate --output_folder \"/home/panwei/he000176/jinwen/results/gln/${predset[$set_idx]}/${datatype[$idx]}/0.$p\""
+
+
+eirpredict --global_configs "${BASE_PATH}${datatype[$idx]}/global_config_0.$p.yaml" --input_configs "${io_config_path}/input_config.yaml" --output_configs "${io_config_path}/output_config.yaml" --model_path "${model_path}/${model_file}" --evaluate --output_folder "/home/panwei/he000176/jinwen/results/gln/${predset[$set_idx]}/${datatype[$idx]}/0.$p"

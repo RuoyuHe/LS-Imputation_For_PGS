@@ -1,0 +1,20 @@
+#!/bin/bash -l
+#SBATCH -A panwei
+#SBATCH --nodes=1
+#SBATCH --time=24:00:00
+#SBATCH --ntasks-per-node=1
+#SBATCH --mem=260g
+#SBATCH --mail-type=FAIL
+#SBATCH --mail-user=he000176@umn.edu
+#SBATCH --array=1-4
+#SBATCH -p ag2tb
+#SBATCH --job-name=25k
+
+cd /home/panwei/he000176/jinwen/LS-impute
+
+conda activate tcn
+module load R/3.6.0
+
+python3 impute_pheno.py base 1 ${SLURM_ARRAY_TASK_ID}
+
+module purge

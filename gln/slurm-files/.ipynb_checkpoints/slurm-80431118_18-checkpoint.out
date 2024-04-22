@@ -1,0 +1,2 @@
+Running task with datatype: prs, p: 9
+eirtrain --global_configs "/home/panwei/he000176/jinwen/gln/configs/base/prs/global_config_0.9.yaml" --input_configs "/home/panwei/he000176/jinwen/gln/configs/base/prs/input_config_0.9.yaml" --output_configs "/home/panwei/he000176/jinwen/gln/configs/base/prs/output_config_0.9.yaml"

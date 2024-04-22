@@ -1,0 +1,27 @@
+22:48:35 - INFO - eir.train_utils.utils - Global random seed set to 0.
+Traceback (most recent call last):
+  File "/home/panwei/he000176/.conda/envs/eir-gln/bin/eirtrain", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/panwei/he000176/.conda/envs/eir-gln/lib/python3.11/site-packages/eir/train.py", line 65, in main
+    configs = get_configs()
+              ^^^^^^^^^^^^^
+  File "/home/panwei/he000176/.conda/envs/eir-gln/lib/python3.11/site-packages/eir/setup/config.py", line 120, in get_configs
+    configs = generate_aggregated_config(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/panwei/he000176/.conda/envs/eir-gln/lib/python3.11/site-packages/eir/setup/config.py", line 254, in generate_aggregated_config
+    input_configs = get_input_configs(input_configs=inputs_config_iter)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/panwei/he000176/.conda/envs/eir-gln/lib/python3.11/site-packages/eir/setup/config.py", line 328, in get_input_configs
+    config_object = init_input_config(yaml_config_as_dict=config_dict)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/panwei/he000176/.conda/envs/eir-gln/lib/python3.11/site-packages/eir/setup/config.py", line 393, in init_input_config
+    model_config = set_up_input_feature_extractor_config(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/panwei/he000176/.conda/envs/eir-gln/lib/python3.11/site-packages/eir/setup/config.py", line 486, in set_up_input_feature_extractor_config
+    model_type_init_config = set_up_feature_extractor_init_config(
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/panwei/he000176/.conda/envs/eir-gln/lib/python3.11/site-packages/eir/setup/config.py", line 551, in set_up_feature_extractor_init_config
+    model_config = model_config_callable(**model_init_kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: LCLModelConfig.__init__() got an unexpected keyword argument 'split_mlp_num_splits'

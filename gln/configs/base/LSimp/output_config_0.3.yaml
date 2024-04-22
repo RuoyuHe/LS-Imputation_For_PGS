@@ -1,0 +1,20 @@
+output_info:
+  output_name: pheno
+  output_source: /home/panwei/he000176/jinwen/data/pheno/training_data_for_base_models/pheno_LSimp_0.3.csv
+  output_type: tabular
+
+output_type_info:
+  target_con_columns:
+    - pheno
+  label_parsing_chunk_size: 2000
+
+model_config:
+  model_init_config:
+    fc_do: 0.5
+    fc_task_dim: 1024
+    final_layer_type: mlp_residual
+    layers:
+      - 8
+    rb_do: 0.5
+    stochastic_depth_p: 0.2
+  model_type: mlp_residual
