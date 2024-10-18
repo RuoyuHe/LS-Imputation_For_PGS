@@ -1,6 +1,6 @@
 output_info:
   output_name: pheno
-  output_source: /home/panwei/he000176/jinwen/data/pheno/training_data_for_base_models/pheno_real_0.4.csv
+  output_source: /home/panwei/he000176/jinwen/data/pheno/lipA/training_data_for_base_models/pheno_real_0.4_adjusted.csv
   output_type: tabular
 
 output_type_info:

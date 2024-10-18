@@ -12,7 +12,11 @@
 cd /home/panwei/he000176/jinwen/gln
 conda activate eir-gln
 
-BASE_PATH="/home/panwei/he000176/jinwen/gln/configs/base/"
+CONFIG_PATH=$1
+MODEL_PATH=$2
+OUTPUT_PATH=$3
+
+BASE_PATH="${CONFIG_PATH}/base/"
 
 # Define datatype based on the SLURM_ARRAY_TASK_ID
 declare -a datatype=('LSimp' 'prs' 'real')
@@ -30,11 +34,14 @@ fi
 
 let "p=(${SLURM_ARRAY_TASK_ID}-1)%9+1"  # Iterate from 1 to 9
 
-io_config_path="/home/panwei/he000176/jinwen/gln/configs/${predset[$set_idx]}"
-model_path="/home/panwei/he000176/jinwen/gln/model_output/${datatype[$idx]}/0.$p/saved_models"
+io_config_path="${CONFIG_PATH}/${predset[$set_idx]}"
+model_path="${MODEL_PATH}/${datatype[$idx]}/0.$p/saved_models"
 model_file=$(ls -Art ${model_path} | tail -n 1)
 
 echo "eirpredict --global_configs \"${BASE_PATH}${datatype[$idx]}/global_config_0.$p.yaml\" --input_configs \"${io_config_path}/input_config.yaml\" --output_configs \"${io_config_path}/output_config.yaml\" --model_path \"${model_path}/${model_file}\" --evaluate --output_folder \"/home/panwei/he000176/jinwen/results/gln/${predset[$set_idx]}/${datatype[$idx]}/0.$p\""
 
 
-eirpredict --global_configs "${BASE_PATH}${datatype[$idx]}/global_config_0.$p.yaml" --input_configs "${io_config_path}/input_config.yaml" --output_configs "${io_config_path}/output_config.yaml" --model_path "${model_path}/${model_file}" --evaluate --output_folder "/home/panwei/he000176/jinwen/results/gln/${predset[$set_idx]}/${datatype[$idx]}/0.$p"
+eirpredict --global_configs "${BASE_PATH}${datatype[$idx]}/global_config_0.$p.yaml" --input_configs "${io_config_path}/input_config.yaml" --output_configs "${io_config_path}/output_config.yaml" --model_path "${model_path}/${model_file}" --evaluate --output_folder "${OUTPUT_PATH}/${predset[$set_idx]}/${datatype[$idx]}/0.$p"
+
+
+# "/home/panwei/he000176/jinwen/results/gln/lipA/${predset[$set_idx]}/${datatype[$idx]}/0.$p"
